@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="asana.otf">
+            <string>Asana-Math</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTable_QuestionsHeaderView" rowHeight="197" id="KGk-i7-Jjw" customClass="CellTable_QuestionsHeaderView" customModule="Prepwyzr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="197"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="196.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="0FW-hC-xoz">
+                        <rect key="frame" x="5" y="8" width="72" height="18"/>
+                        <fontDescription key="fontDescription" name="Asana-Math" family="Asana Math" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Mark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="JbA-Tn-v68">
+                        <rect key="frame" x="267.5" y="8" width="47.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Asana-Math" family="Asana Math" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="sRs-7e-6MZ">
+                        <rect key="frame" x="5" y="36" width="310" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Rg6-sA-a8s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Asana-Math" family="Asana Math" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="osF-r2-ujk">
+                        <rect key="frame" x="5" y="65" width="310" height="123.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="123.5" id="Yeg-SJ-QaN"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ETp-6t-gcN">
+                        <rect key="frame" x="150" y="117" width="20" height="20"/>
+                        <color key="color" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </activityIndicatorView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpg-sT-Uop">
+                        <rect key="frame" x="5" y="65" width="310" height="123.5"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="osF-r2-ujk" secondAttribute="bottom" constant="8" id="13X-Ns-DHg"/>
+                    <constraint firstItem="dpg-sT-Uop" firstAttribute="trailing" secondItem="osF-r2-ujk" secondAttribute="trailing" id="2fA-le-54a"/>
+                    <constraint firstItem="osF-r2-ujk" firstAttribute="trailing" secondItem="JbA-Tn-v68" secondAttribute="trailing" id="2lz-OA-VfU"/>
+                    <constraint firstItem="sRs-7e-6MZ" firstAttribute="leading" secondItem="0FW-hC-xoz" secondAttribute="leading" id="3TJ-Qe-OnN"/>
+                    <constraint firstItem="JbA-Tn-v68" firstAttribute="top" secondItem="0FW-hC-xoz" secondAttribute="top" id="BYZ-p8-Jyi"/>
+                    <constraint firstItem="ETp-6t-gcN" firstAttribute="centerX" secondItem="osF-r2-ujk" secondAttribute="centerX" id="DIR-3o-oXw"/>
+                    <constraint firstItem="dpg-sT-Uop" firstAttribute="bottom" secondItem="osF-r2-ujk" secondAttribute="bottom" id="LBj-kW-3pC"/>
+                    <constraint firstItem="dpg-sT-Uop" firstAttribute="top" secondItem="osF-r2-ujk" secondAttribute="top" id="MBX-c9-bny"/>
+                    <constraint firstAttribute="trailing" secondItem="JbA-Tn-v68" secondAttribute="trailing" constant="5" id="QWC-oV-Pxi"/>
+                    <constraint firstItem="sRs-7e-6MZ" firstAttribute="trailing" secondItem="JbA-Tn-v68" secondAttribute="trailing" id="TGE-s6-As3"/>
+                    <constraint firstItem="osF-r2-ujk" firstAttribute="leading" secondItem="0FW-hC-xoz" secondAttribute="leading" id="VQ2-dR-e1D"/>
+                    <constraint firstItem="0FW-hC-xoz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aWN-92-QKd"/>
+                    <constraint firstItem="sRs-7e-6MZ" firstAttribute="top" secondItem="0FW-hC-xoz" secondAttribute="bottom" constant="10" id="iGE-3Y-9U9"/>
+                    <constraint firstItem="osF-r2-ujk" firstAttribute="top" secondItem="sRs-7e-6MZ" secondAttribute="bottom" constant="8" id="lA0-zY-DAh"/>
+                    <constraint firstItem="ETp-6t-gcN" firstAttribute="centerY" secondItem="osF-r2-ujk" secondAttribute="centerY" id="voy-dN-P2N"/>
+                    <constraint firstItem="0FW-hC-xoz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="wFX-2y-C85"/>
+                    <constraint firstItem="dpg-sT-Uop" firstAttribute="leading" secondItem="osF-r2-ujk" secondAttribute="leading" id="xw3-8z-WOP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicatorView_QuestionImage" destination="ETp-6t-gcN" id="bSW-Zp-hYg"/>
+                <outlet property="btn_OpenImageView" destination="dpg-sT-Uop" id="qIi-Hj-72u"/>
+                <outlet property="constraintH_imgQuestionImage" destination="Yeg-SJ-QaN" id="KiK-JQ-Ozd"/>
+                <outlet property="constraintH_lblQuestion" destination="Rg6-sA-a8s" id="Var-SQ-4tw"/>
+                <outlet property="imgQuestionImage" destination="osF-r2-ujk" id="lRv-xm-Bma"/>
+                <outlet property="lblQuestion" destination="sRs-7e-6MZ" id="2jD-Ib-UQF"/>
+                <outlet property="lblQuestionMarks" destination="JbA-Tn-v68" id="H9z-q3-pTz"/>
+                <outlet property="lblQuestionNumber" destination="0FW-hC-xoz" id="RQ1-Oh-7qE"/>
+            </connections>
+            <point key="canvasLocation" x="-36" y="-128.5"/>
+        </tableViewCell>
+    </objects>
+</document>

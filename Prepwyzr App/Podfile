@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Prepwyzr' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Prepwyzr
+
+    pod 'Charts', '~>3.0.4'
+
+    pod 'SDWebImage', '~>3.8'
+    pod 'JTSImageViewController'
+
+    pod 'SkyFloatingLabelTextField'
+    
+    pod 'Alamofire'
+    pod 'MBProgressHUD', '~> 1.0.0'
+    
+    pod 'IQDropDownTextField'
+    pod 'IQKeyboardManagerSwift'
+    
+    pod 'UITextView+Placeholder', '~> 1.2'
+
+    pod "CZPicker"
+
+
+  target 'PrepwyzrTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PrepwyzrUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

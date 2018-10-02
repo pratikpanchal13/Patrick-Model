@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="asana.otf">
+            <string>Asana-Math</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellTable_QuestionsAnwserListForText" rowHeight="169" id="KGk-i7-Jjw" customClass="CellTable_QuestionsAnwserListForText" customModule="Prepwyzr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URp-af-Umj">
+                        <rect key="frame" x="10" y="2" width="300" height="162"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRm-DH-32j">
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="162"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="P9H-Qh-TTF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Asana-Math" family="Asana Math" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXU-UN-iC2">
+                                <rect key="frame" x="47" y="8" width="253" height="23.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="0BA-eG-KGP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Asana-Math" family="Asana Math" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QMU-il-VsN">
+                                <rect key="frame" x="47" y="36.5" width="253" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="nYf-cF-WsQ"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lAC-TY-mPo">
+                                <rect key="frame" x="163.5" y="86.5" width="20" height="20"/>
+                                <color key="color" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQY-KQ-sdy">
+                                <rect key="frame" x="47" y="36.5" width="253" height="120"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lAC-TY-mPo" firstAttribute="centerY" secondItem="QMU-il-VsN" secondAttribute="centerY" id="0fR-95-hvl"/>
+                            <constraint firstItem="iQY-KQ-sdy" firstAttribute="leading" secondItem="QMU-il-VsN" secondAttribute="leading" id="2hr-B9-AQA"/>
+                            <constraint firstItem="TXU-UN-iC2" firstAttribute="top" secondItem="URp-af-Umj" secondAttribute="top" constant="8" id="A5M-18-Wgz"/>
+                            <constraint firstItem="QMU-il-VsN" firstAttribute="trailing" secondItem="TXU-UN-iC2" secondAttribute="trailing" id="DwJ-Qj-qWz"/>
+                            <constraint firstItem="QMU-il-VsN" firstAttribute="leading" secondItem="TXU-UN-iC2" secondAttribute="leading" id="G1S-CJ-yQK"/>
+                            <constraint firstItem="iQY-KQ-sdy" firstAttribute="bottom" secondItem="QMU-il-VsN" secondAttribute="bottom" id="Juv-yl-uRT"/>
+                            <constraint firstItem="lAC-TY-mPo" firstAttribute="centerX" secondItem="QMU-il-VsN" secondAttribute="centerX" id="PlP-9z-icS"/>
+                            <constraint firstAttribute="bottom" secondItem="xRm-DH-32j" secondAttribute="bottom" id="TOm-cz-BOH"/>
+                            <constraint firstItem="xRm-DH-32j" firstAttribute="leading" secondItem="URp-af-Umj" secondAttribute="leading" id="Z9K-4M-ezG"/>
+                            <constraint firstAttribute="trailing" secondItem="TXU-UN-iC2" secondAttribute="trailing" id="ZeC-MS-qgR"/>
+                            <constraint firstItem="xRm-DH-32j" firstAttribute="top" secondItem="URp-af-Umj" secondAttribute="top" id="cWy-L0-ld0"/>
+                            <constraint firstItem="iQY-KQ-sdy" firstAttribute="top" secondItem="QMU-il-VsN" secondAttribute="top" id="oHp-VG-OGe"/>
+                            <constraint firstItem="iQY-KQ-sdy" firstAttribute="trailing" secondItem="QMU-il-VsN" secondAttribute="trailing" id="q5V-HT-LPs"/>
+                            <constraint firstItem="TXU-UN-iC2" firstAttribute="leading" secondItem="xRm-DH-32j" secondAttribute="trailing" constant="5" id="xcN-lU-4jO"/>
+                            <constraint firstAttribute="bottom" secondItem="QMU-il-VsN" secondAttribute="bottom" constant="5.5" id="xw1-hc-M7b"/>
+                            <constraint firstItem="QMU-il-VsN" firstAttribute="top" secondItem="TXU-UN-iC2" secondAttribute="bottom" constant="5" id="z8s-Zp-dJ4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="URp-af-Umj" secondAttribute="bottom" constant="4.5" id="BIe-50-dgE"/>
+                    <constraint firstAttribute="trailing" secondItem="URp-af-Umj" secondAttribute="trailing" constant="10" id="Vx7-dT-TfM"/>
+                    <constraint firstItem="URp-af-Umj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="abr-Nb-CJc"/>
+                    <constraint firstItem="URp-af-Umj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="x7U-6I-zsi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicatorView_ImgOptions" destination="lAC-TY-mPo" id="Egr-Yx-N60"/>
+                <outlet property="btn_OpenImageView" destination="iQY-KQ-sdy" id="hqF-pj-OgM"/>
+                <outlet property="constraintH_OptionsImage" destination="nYf-cF-WsQ" id="ykk-rz-w7a"/>
+                <outlet property="constraintH_OptionsValue" destination="0BA-eG-KGP" id="kEL-29-o0g"/>
+                <outlet property="imgOptions" destination="QMU-il-VsN" id="dzt-jJ-dWV"/>
+                <outlet property="lblOptionsNumber" destination="xRm-DH-32j" id="9MD-yp-I0I"/>
+                <outlet property="lblOptionsValue" destination="TXU-UN-iC2" id="gPP-mD-ak5"/>
+                <outlet property="viewForBackground" destination="URp-af-Umj" id="vOf-7V-NiT"/>
+            </connections>
+            <point key="canvasLocation" x="-31" y="-129.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_PrepwyzrTests {
+  umbrella header "Pods-PrepwyzrTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
